@@ -7,9 +7,15 @@
         <link rel="icon" href="/Favi/favicon.ico" type="image/x-icon"> <!-- Add this line -->
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
-            /* Include your font from a CDN link here */
-            @import url('https://cdn.jsdelivr.net/gh/conceitedengineering/Real-Font-tester@master/HORSEN.woff');
-            /* Apply the custom font to the entire page */
+            /* Define the font using the CDN link */
+            @font-face {
+                font-family: 'Horsen';
+                src: url('https://cdn.jsdelivr.net/gh/conceitedengineering/Real-Font-tester@master/HORSEN.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+    
+            /* Apply the font globally */
             body {
                 font-family: 'Horsen', sans-serif;
             }
